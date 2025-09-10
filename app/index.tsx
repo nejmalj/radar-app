@@ -59,10 +59,13 @@ export default function Index() {
             <MapView style={styles.map} region={region} showsUserLocation>
                 {radars.map((r) => (
                     <React.Fragment key={r.id}>
-                        <Marker coordinate={{ latitude: r.latitude, longitude: r.longitude }}>
+                        <Marker
+                            coordinate={{ latitude: r.latitude, longitude: r.longitude }}
+                            title={r.vma ? `${r.type} - ${r.vma} km/h` : r.type}
+                        >
                             <MaterialIcons name="warning" size={30} color="red" />
                         </Marker>
-                        <Circle
+                            <Circle
                             center={{ latitude: r.latitude, longitude: r.longitude }}
                             radius={r.radius}
                             strokeColor="rgba(255,0,0,0.6)"
