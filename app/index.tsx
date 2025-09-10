@@ -3,6 +3,7 @@ import { StyleSheet, View, Alert } from "react-native";
 import MapView, { Marker, Circle } from "react-native-maps";
 import * as Location from "expo-location";
 import radarsData from "../assets/radars.json";
+import { MaterialIcons } from '@expo/vector-icons';
 
 function getDistance(lat1, lon1, lat2, lon2) {
     const R = 6371e3;
@@ -58,11 +59,9 @@ export default function Index() {
             <MapView style={styles.map} region={region} showsUserLocation>
                 {radars.map((r) => (
                     <React.Fragment key={r.id}>
-                        <Marker
-                            coordinate={{ latitude: r.latitude, longitude: r.longitude }}
-                            title={r.vma ? `${r.type} - ${r.vma} km/h` : r.type}
-                            pinColor="red"
-                        />
+                        <Marker coordinate={{ latitude: r.latitude, longitude: r.longitude }}>
+                            <MaterialIcons name="warning" size={30} color="red" />
+                        </Marker>
                         <Circle
                             center={{ latitude: r.latitude, longitude: r.longitude }}
                             radius={r.radius}
