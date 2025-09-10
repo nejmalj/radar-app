@@ -1,50 +1,20 @@
-# Welcome to your Expo app 👋
+# TP - Carto - Stravradar
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Objectifs
 
-## Get started
+Créer une application au format "page d'accueil / principale avec une carte"
+Afficher radars récupérés via l'API du gouvernement sur une carte
+Faire un affichage pertinent avec des notions de cartes (MapView, Marker, etc.)
+Utiliser la position de l'utilisateur avec des degrés de précision différents
+Rajouter l'utilisation d'une API maison pour la faculté à prototyper rapidement une POC
 
-1. Install dependencies
+## Idée
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+0. Générer via IA une maquette pertinente pour une application type "carte"
+1. Afficher la position de l'utilisateur sur la carte
+2. Afficher les radars sur la carte
+3. Ajouter des filtres sur les radars (type, distance, etc.)
+4. Gérer l'affichage de radars de manière optimisée (déplacements sur la carte)
+5. Dessiner des zones pour la compétition type strava (carré ou rond)
+6. Afficher des informations détaillées sur un radar au clic (classement, nombre de passages)
+7. En bonus, sécuriser l'application (authentification, autorisations, etc.)
